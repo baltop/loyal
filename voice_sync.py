@@ -66,7 +66,7 @@ def ping_time(filename):
         wf2.setframerate(wf.getframerate())
         wf2.writeframes(data)
 
-        silence = b'\x00'  # or " " or hex(0) or whatever the hell silence is supposed to be
+        silence = b'\x00'  # 묵음 처리
 
         emptyspace = (silence * CHUNK_SIZE * 5 ) * (5)
         #print("[", emptyspace, "]")
